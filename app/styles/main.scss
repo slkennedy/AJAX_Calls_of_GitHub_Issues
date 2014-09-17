@@ -1,0 +1,45 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+$primary-grey: HSLA(222, 25%, 10%, .75);
+$secondary-blue: HSLA(215, 72%, 92%, .75);
+$tertiary-yellow: HSLA(52, 47%, 56%, 1);
+
+$primary-font: HSLA(222, 25%, 10%, 1);
+$secondary-font: HSLA(215, 72%, 92%, 1);
+
+// Custom Styles
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: $primary-grey;
+}
+
+.left-display{
+  margin: 50px 20px 0 50px;
+  float: left;
+  position: fixed;
+  width: 30%;
+  border-radius: 6px;
+  background: $tertiary-yellow;
+  padding: 20px;
+}
+  
+.list-items {
+  font-size: 18px;
+  color: $primary-font;
+  list-style: circle;
+  cursor: pointer;
+}
+
+.right-display {
+  margin: 50px 20px 0 460px;
+  float: left;
+  width: 50%;
+  border-radius: 6px;
+  background: $secondary-blue;
+  padding: 20px;
+}
+
+.list-details {
+  list-style: square;
+}
