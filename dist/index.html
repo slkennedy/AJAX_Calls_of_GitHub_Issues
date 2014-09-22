@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>assignment_12</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div class = "left-display">
+        <h2>Open Issue Titles</h2>
+        <ul class="list-items">
+        </ul>
+    </div>
+    <div class= "right-display">
+        <h2>Issue Comments</h2>
+        <ul class="list-details">
+        </ul>
+    </div>
+
+    <script type="text/template" id="template-list">
+        <li class="titlelink" data-id="<%= comments_url%>"><%= title %></li>   
+    </script>
+
+    <script type="text/template" id="template-details">
+        <li><%= body %></li>
+    </script>
+
+    <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/main.js"></script>
+</body>
+</html>
